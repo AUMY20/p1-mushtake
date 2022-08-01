@@ -1,0 +1,16 @@
+html
+{
+    text-align: center;
+    background-color:steelblue ;
+}
+
+#snapshot:hover
+{
+    height: 30px;
+    width: 100px;
+}
+
+canvas
+{
+    border-style:dashed ;
+}
