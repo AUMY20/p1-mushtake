@@ -1,7 +1,6 @@
 html
 {
     text-align: center;
-    background-color:steelblue ;
 }
 
 #snapshot:hover
@@ -13,4 +12,10 @@ html
 canvas
 {
     border-style:dashed ;
+}
+
+h2
+{
+    color: grey;
+    font-size: 50px;
 }

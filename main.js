@@ -1,6 +1,9 @@
+nose_x = 0;
+nose_y = 0;
+
 function preload()
 {
-
+    nose = loadImage('mushtake-.png');
 }
 
 function setup()
@@ -17,8 +20,8 @@ function gotPoses(results)
     if (results.length > 0)
     {
         console.log(results);
-        console.log(results[0].pose.nose.x);
-        console.log(results[0].pose.nose.y);
+        nose_x = results[0].pose.nose.x;
+        nose_y = results[0].pose.nose.y;
     }
 }
 
@@ -30,6 +33,12 @@ console.log("check");
 function draw()
 {
     image(cam,0,0,300,300);
+    //!#clown nose done manually#!
+    //fill(255,150,0);
+    // stroke(255,0,0);
+    // circle(nose_x,nose_y,20);
+    //clown noseusing downloaded image
+    image(nose,nose_x-25,nose_y,60,30);
 
 }
 
